@@ -1,0 +1,24 @@
+.page{
+    font-family: 'Azeret mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__block{
+        width: 150px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
