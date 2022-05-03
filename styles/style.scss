@@ -1,8 +1,12 @@
+$mainColor: #8144D6;
+$secondColor: #976BD6;
+
 .page{
-    font-family: 'Azeret mono', monospace;
+    font-family: 'Open Sans', arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: $mainColor;
 }
 
 .container{
@@ -15,10 +19,87 @@
 .timer{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    width: 100%;
     &__block{
-        width: 150px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        .time{
+            //background-color: $mainColor;
+            background-color: $secondColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            height: 200px;
+            width: 200px;
+
+            border-radius: 50%;
+            font-size: 95px;
+
+
+        }
+
+        .title{
+            // background-color: $secondColor;
+            padding: 5px;
+            text-align: center;
+            color: black;
+            font-size: 25px;
+        }
+
+        .timer__buttons{
+
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+
+            .time-up{
+                width: 0px;
+                height: 0px;
+                border: 10px solid transparent; 
+                border-bottom: 10px solid gray;
+                background-color: inherit;
+                padding: 0;
+                margin-bottom: 30px;
+            }
+
+            .time-down{
+                width: 0px;
+                height: 0px;
+                border: 10px solid transparent; 
+                border-top: 10px solid gray;
+                background-color: inherit;
+                padding: 0;
+            }
+        }
     }
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+    .button{
+        background-color: $secondColor;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+        transition: .3s ease-in-out;
+        &:hover{
+            opacity: .6;
+            cursor: pointer;
+        }
+    }
+    
+
 }

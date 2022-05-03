@@ -5,18 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>timer</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class = "page">
     <div class="container">
         <div class="timer">
             <div class="timer__block">
-                <div class="time minutes">00</div>
-                <div class="title"></div>
+                <div>
+                    <div class="time minutes">00</div>
+                    <div class="title">minutes</div>
+                </div>
+                <div class="timer__buttons">
+                    <button class="time-up"></button>
+                    <button class="time-down"></button>
+                </div>
             </div>
 
             <div class="timer__block">
-                <div class="time seconds">00</div>
-                <div class="title"></div>
+                <div>
+                    <div class="time seconds">00</div>
+                    <div class="title">seconds</div>
+                </div>
+
+                <div class="timer__buttons">
+                    <button class="time-up"></button>
+                    <button class="time-down"></button>
+                </div>
+            </div>
+
+            <div class="timer__block">
+                <div>
+                    <div class="time milliseconds">00</div>
+                    <div class="title">milliseconds</div>
+                </div>
+
+                <div class="timer__buttons">
+                    <button class="time-up"></button>
+                    <button class="time-down"></button>
+                </div>
             </div>
         </div>
 
@@ -27,5 +53,6 @@
         </div>
 
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

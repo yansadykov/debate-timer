@@ -1,8 +1,9 @@
 .page {
-  font-family: "Azeret mono", monospace;
+  font-family: "Open Sans", arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #8144D6;
 }
 
 .container {
@@ -15,10 +16,74 @@
 .timer {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 .timer__block {
-  width: 150px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.timer__block .time {
+  background-color: #976BD6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  font-size: 95px;
+}
+.timer__block .title {
+  padding: 5px;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.timer__block .timer__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.timer__block .timer__buttons .time-up {
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid gray;
+  background-color: inherit;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.timer__block .timer__buttons .time-down {
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  border-top: 10px solid gray;
+  background-color: inherit;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.buttons .button {
+  background-color: #976BD6;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  transition: 0.3s ease-in-out;
+}
+.buttons .button:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
